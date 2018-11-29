@@ -7,7 +7,7 @@ import (
 	"github.com/tensorflow/tensorflow/tensorflow/go/op"
 )
 
-func main() {
+func createGraph() {
 	// Let's describe what we want: create the graph
 
 	// We want to define two placeholder to fill at runtime
