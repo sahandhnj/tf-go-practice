@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	modeldir := "meta/model"
-	modelpath := filepath.Join(modeldir, "frozen_inference_graph.pb")
+	modeldir := "meta/model2"
+	modelpath := filepath.Join(modeldir, "resnet50.pb")
 	model, err := ioutil.ReadFile(modelpath)
 	if err != nil {
 		panic(err)
@@ -31,6 +31,6 @@ func main() {
 
 	ops := graph.Operations()
 	for _, op := range ops {
-		fmt.Printf("%s\n", op.Name)
+		fmt.Printf("%s\n", op.Name())
 	}
 }
