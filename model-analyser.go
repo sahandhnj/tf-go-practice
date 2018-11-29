@@ -31,6 +31,6 @@ func main() {
 
 	ops := graph.Operations()
 	for _, op := range ops {
-		fmt.Printf("%s\n", op.Name())
+		fmt.Printf("%s\n", op.Name)
 	}
 }
